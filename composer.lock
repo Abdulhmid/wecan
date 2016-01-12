@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "960880978427d6c58057433e5d68de58",
-    "content-hash": "f2e74074f9e1cb56843c9d9c3cf65ec7",
+    "hash": "2c7c6ea734236a6dae5ad86fb18519cd",
+    "content-hash": "951b74b0d1f7ba29e2adfccb81595648",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -346,6 +346,60 @@
                 "tokenizer"
             ],
             "time": "2015-12-05 17:17:57"
+        },
+        {
+            "name": "kris/laravel-form-builder",
+            "version": "1.6.42",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kristijanhusak/laravel-form-builder.git",
+                "reference": "3c850146dea249c8b6d4b03ab2ed51fa7c09e067"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kristijanhusak/laravel-form-builder/zipball/3c850146dea249c8b6d4b03ab2ed51fa7c09e067",
+                "reference": "3c850146dea249c8b6d4b03ab2ed51fa7c09e067",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "5.*@dev",
+                "illuminate/validation": "5.*@dev",
+                "laravelcollective/html": "5.*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.0",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.6.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Kris\\LaravelFormBuilder": "src/"
+                },
+                "classmap": [
+                    "tests/FormBuilderTestCase.php"
+                ],
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kristijan Husak",
+                    "email": "husakkristijan@gmail.com"
+                }
+            ],
+            "description": "Laravel form builder - symfony like",
+            "time": "2016-01-08 12:37:46"
         },
         {
             "name": "laravel/framework",
