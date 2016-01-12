@@ -157,6 +157,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Yajra\Datatables\DatatablesServiceProvider::class,
         Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
 
     ],
 
@@ -203,8 +204,9 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
-        'Datatables' => yajra\Datatables\Facades\Datatables::class,
-        'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
+        'Datatables'    => yajra\Datatables\Facades\Datatables::class,
+        'FormBuilder'   => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
+        'Image'         => Intervention\Image\Facades\Image::class,
 
     ],
 
