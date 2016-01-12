@@ -16,10 +16,9 @@ class HomeController extends Controller
     protected $folder = "module.home";
     protected $form;
 
-    public function __construct(Md\Users $users)
+    public function __construct()
     {
-        $this->model    = $users;
-        $this->form     = UsersForm::class;
+        // $this->form     = UsersForm::class;
     }
 
     public function getIndex()

@@ -11,19 +11,7 @@
     <body class="skin-blue sidebar-mini">
         <div class="wrapper">
 
-            @include('partial.header')
             <!-- Left side column. contains the logo and sidebar -->
-            @include('partial.sidebar')
-
-            <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper" style="min-height:648px">
-                <section class="content-header">
-                        <h1>{!! $title !!}</h1>
-                        <ol class="breadcrumb">
-                            <li><a href="{!! url('/') !!}"><i class="fa fa-dashboard"></i> Beranda</a></li>
-                            {!! Breadcrumb::render([''.$breadcrumb.'']) !!}
-                        </ol>
-                </section>
                 <!-- Main content -->
                 @yield('content')
 
