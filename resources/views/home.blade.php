@@ -5,30 +5,42 @@
         <title>{!! isset($title) ? $title : "We Can" !!} | We Can If We Together</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
+        <link href="{!! asset('additional/home/css/bootstrap.min.css') !!}" rel="stylesheet">
+        <link href="{!! asset('additional/home/css/font-awesome.min.css') !!}" rel="stylesheet">
+        <link href="{!! asset('additional/home/css/animate.min.css') !!}" rel="stylesheet"> 
+        <link href="{!! asset('additional/home/css/lightbox.css') !!}" rel="stylesheet"> 
+        <link href="{!! asset('additional/home/css/main.css') !!}" rel="stylesheet">
+        <link href="{!! asset('additional/home/css/responsive.css') !!}" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->       
+        <link rel="shortcut icon" href="images/ico/favicon.ico">
+
         @yield('style')
 
     </head>
-    <body class="skin-blue sidebar-mini">
-        <div class="wrapper">
+    <body >
 
-            <!-- Left side column. contains the logo and sidebar -->
-                <!-- Main content -->
-                @yield('content')
+        <!-- Header -->
+        @include('partial.header')
+        <!--/#header-->
 
-            </div><!-- /.content-wrapper -->
+        <div class="ikiUtama">        
+            @yield('content')
+        </div>
 
-            <!-- Add the sidebar's background. This div must be placed
-                 immediately after the control sidebar -->
-            <div class='control-sidebar-bg'></div>
-        </div><!-- ./wrapper -->
+        <!-- Footer -->
+        @include('partial.footer')
+        <!--/#footer-->
 
-        <!-- jQuery 2.1.3 -->
-        <script src="{!! asset('plugins/jQuery/jQuery-2.1.3.min.js') !!}" type="text/javascript"></script>
-
-        <script type="text/javascript">
-            //  jQuery('.nailthumb-container').nailthumb();
-            $('.autohide').delay(5000).fadeOut('slow');
-        </script>
+        <!-- Javascript -->
+        <script type="text/javascript" src="{!! asset('additional/home/js/jquery.js') !!}"></script>
+        <script type="text/javascript" src="{!! asset('additional/home/js/bootstrap.min.js') !!}"></script>
+        <script type="text/javascript" src="{!! asset('additional/home/js/lightbox.min.js') !!}"></script>
+        <script type="text/javascript" src="{!! asset('additional/home/js/wow.min.js') !!}"></script>
+        <script type="text/javascript" src="{!! asset('additional/home/js/main.js') !!}"></script>   
 
         @yield('script')
 
