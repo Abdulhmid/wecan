@@ -11,8 +11,6 @@
 |
 */
 
-Route::controller('/','HomeController');
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -24,6 +22,14 @@ Route::controller('/','HomeController');
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-    //
+
+Route::group([], function() {
+	Route::controller('/admin', 'DashboardController');
 });
+
+
+// Route::group(['middleware' => ['']], function () {
+    
+// });
+
+Route::controller('/','HomeController');

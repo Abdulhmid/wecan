@@ -158,6 +158,7 @@ return [
         Yajra\Datatables\DatatablesServiceProvider::class,
         Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        App\Providers\HelperServiceProvider::class,
 
     ],
 
