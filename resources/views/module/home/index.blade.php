@@ -1,4 +1,4 @@
-@extends('home')
+@extends('frontend')
 
 @section('style')
 

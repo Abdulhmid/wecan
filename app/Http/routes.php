@@ -23,13 +23,9 @@
 */
 
 
-Route::group([], function() {
-	Route::controller('/admin', 'DashboardController');
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+
+    Route::controller('/admin', 'DashboardController');
 });
-
-
-// Route::group(['middleware' => ['']], function () {
-    
-// });
-
-Route::controller('/','HomeController');
+Route::controller('/','FrontendController');
